@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo2023A06.MainPage">
+
+    <StackLayout>
+        <Button Text="Listar" Clicked="Button_Clicked"></Button>
+        <Entry Placeholder="Filtro" x:Name="txtFiltro"></Entry>
+        <Button Text="Limpiar" Clicked="Button_Clicked_1"></Button>
+        <ListView x:Name="lvDemoDinamico"></ListView>
+        <ListView x:Name="lvDemo">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Universitario</x:String>
+                    <x:String>Alianza Lima</x:String>
+                    <x:String>Sporting Cristal</x:String>
+                    <x:String>Melgar</x:String>
+                    <x:String>Cienciano</x:String>
+                    <x:String>Miguel Grau</x:String>
+                    
+                    
+                </x:Array>
+                
+            </ListView.ItemsSource>
+            
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
